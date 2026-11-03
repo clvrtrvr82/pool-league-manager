@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="feltGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="60%" stop-color="#065f46"/>
+      <stop offset="100%" stop-color="#022c22"/>
+    </radialGradient>
+    <radialGradient id="ballGrad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="40%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    <radialGradient id="shine" cx="30%" cy="25%" r="35%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.4)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Table Felt Base -->
+  <rect width="512" height="512" rx="110" fill="url(#feltGrad)"/>
+  
+  <!-- Outer Border Ring (Wood rail accent) -->
+  <rect x="16" y="16" width="480" height="480" rx="94" fill="none" stroke="#b45309" stroke-width="12" opacity="0.85"/>
+  <rect x="28" y="28" width="456" height="456" rx="82" fill="none" stroke="#fbbf24" stroke-width="2" opacity="0.4"/>
+
+  <!-- Cue Stick Accent -->
+  <g transform="rotate(-35 256 256)" opacity="0.35">
+    <rect x="246" y="-60" width="20" height="630" rx="6" fill="#fcd34d"/>
+    <rect x="246" y="-60" width="20" height="80" rx="4" fill="#78350f"/>
+    <rect x="248" y="550" width="16" height="20" rx="2" fill="#38bdf8"/>
+  </g>
+
+  <!-- 8-Ball Body with Shadow -->
+  <circle cx="256" cy="256" r="170" fill="url(#ballGrad)" filter="url(#shadow)"/>
+  
+  <!-- 8-Ball Highlight / Specular -->
+  <circle cx="256" cy="256" r="170" fill="url(#shine)"/>
+
+  <!-- 8-Ball White Target Center -->
+  <circle cx="256" cy="256" r="76" fill="#f8fafc"/>
+
+  <!-- The "8" Numeral -->
+  <text x="256" y="292" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="112" fill="#0f172a" text-anchor="middle">8</text>
+</svg>

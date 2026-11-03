@@ -1,0 +1,6 @@
+{
+  "name": "Pool League Manager",
+  "description": "Standalone pool league management app with automated round-robin scheduling, table assignments, match scoring, substitute tracking, and complete handicap statistics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
